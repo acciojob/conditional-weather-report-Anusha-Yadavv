@@ -1,7 +1,7 @@
 // WeatherDisplay.js
 import React from "react";
 
-const WetherDisplay = ({ weatherData }) => {
+const WeatherDisplay = ({ weatherData }) => {
   // Determine temperature display color based on the temperature value
   const temperatureColor = weatherData.temperature > 20 ? "red" : "blue";
 
@@ -13,4 +13,4 @@ const WetherDisplay = ({ weatherData }) => {
   );
 };
 
-export default WetherDisplay;
+export default WeatherDisplay;

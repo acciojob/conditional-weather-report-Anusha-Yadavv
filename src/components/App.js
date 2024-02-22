@@ -1,7 +1,6 @@
-
 // App.js
 import React, { useState, useEffect } from "react";
-import WetherDisplay from "./WeatherDisplay";
+import WeatherDisplay from "./WeatherDisplay";
 
 const App = () => {
   // Initialize weather data state with a default value
@@ -21,10 +20,9 @@ const App = () => {
   return (
     <div>
       <h1>Current Weather</h1>
-      <WetherDisplay weatherData={weatherData} />
+      <WeatherDisplay weatherData={weatherData} />
     </div>
   );
 };
 
 export default App;
-
