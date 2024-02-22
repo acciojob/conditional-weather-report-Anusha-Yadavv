@@ -8,7 +8,9 @@ const WeatherDisplay = ({ weatherData }) => {
   return (
     <div>
       <p style={{ color: temperatureColor }}>Temperature: {weatherData.temperature}</p>
-      <p>Conditions: {weatherData.conditions}</p>
+      {weatherData.conditions && (
+        <span>Conditions: {weatherData.conditions}</span>
+      )}
     </div>
   );
 };
